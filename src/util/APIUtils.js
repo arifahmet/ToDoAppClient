@@ -57,7 +57,7 @@ export function signup(signupRequest) {
 
 export function checkUsernameAvailability(username) {
     return request({
-        url: API_BASE_URL + "/user/checkUsernameAvailability?username=" + username,
+        url: API_BASE_URL + "/user/checkusernameavailability?username=" + username,
         method: 'GET'
     });
 }
