@@ -7,14 +7,17 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "3.0.0",
-    "react-table": "^6.8.6"
+    "react-scripts": "4.0.0",
+    "react-table": "^6.8.6",
+    "snyk": "^1.437.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-plugin-import": "^1.11.0",
@@ -26,5 +29,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
